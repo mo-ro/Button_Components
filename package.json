@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mo-ro/Button_Components/issues"
   },
-  "homepage": "https://github.com/mo-ro/Button_Components#readme"
+  "homepage": "https://github.com/mo-ro/Button_Components#readme",
+  "dependencies": {
+    "gatsby-plugin-alias-imports": "^1.0.5"
+  }
 }
