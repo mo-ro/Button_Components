@@ -2,6 +2,7 @@ import {LiveEditor, LiveError, LivePreview, LiveProvider} from 'react-live';
 import React from 'react'
 import htmlReactParser from "html-react-parser";
 import reactElementToJsxString from "react-element-to-jsx-string";
+import * as Components from "./liveScope";
 
 const languageTransformers = {
   html: html => htmlToJsx(html),
@@ -30,9 +31,10 @@ function wrapWithFragment(jsx) {
 
 
 const LiveCode = ({code, language}) => {
+console.log(Components, "scope")
   return (
     <LiveProvider
-        // scope={{}}
+        scope={Components}
         code={code}
         transformCode={languageTransformers[language]}
       >

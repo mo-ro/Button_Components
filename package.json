@@ -18,5 +18,8 @@
   "homepage": "https://github.com/mo-ro/Button_Components#readme",
   "dependencies": {
     "gatsby-plugin-alias-imports": "^1.0.5"
+  },
+  "devDependencies": {
+    "styled-components": "^4.4.0"
   }
 }
