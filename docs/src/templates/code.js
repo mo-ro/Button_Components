@@ -1,17 +1,15 @@
 import LiveCode from "./liveCode";
 import React from "react";
 
-const Code = ({className, children, live}) => {
-  console.log("code")
-  const language = className ? className.replace(/language-/, '') : ''
-  const code = children.trim()
-  console.log(language, code);
+const Code = ({ className, children, live }) => {
+  const language = className ? className.replace(/language-/, "") : "";
+  const code = children.trim();
 
-  if(live) {
-    return <LiveCode code={code} language={language} />
+  if (live) {
+    return <LiveCode code={code} language={language} />;
   } else {
-    return children
+    return children;
   }
-}
+};
 
 export default Code;
