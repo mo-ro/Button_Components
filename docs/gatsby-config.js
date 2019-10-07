@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -34,6 +36,14 @@ module.exports = {
           default: require.resolve('./src/templates/layout.js'),
         },
       },
+    },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          '@components': path.resolve(__dirname, './src/components')
+        }
+      }
     },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,

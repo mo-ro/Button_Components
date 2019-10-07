@@ -1,6 +1,6 @@
 import React from "react"
 import { MDXProvider } from "@mdx-js/react"
-import Button from "../components/Button"
+import Button from "@components/Button"
 import Code from "./code";
 
 // codeタグにreact-liveを使ったcodeコンポーネントを使用
