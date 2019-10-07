@@ -18,10 +18,13 @@
     "gatsby-source-filesystem": "^2.1.29",
     "gatsby-transformer-remark": "^2.6.27",
     "gatsby-transformer-sharp": "^2.2.20",
+    "html-react-parser": "^0.9.1",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "react-element-to-jsx-string": "^14.1.0",
     "react-helmet": "^5.2.1",
+    "react-live": "^2.2.1",
     "styled-components": "^4.4.0"
   },
   "devDependencies": {
