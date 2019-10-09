@@ -6,10 +6,8 @@ title: "sample2"
 iioioi
 
 
-```jsx live
-<Button>kjjkj</Button>
-```
 
-```jsx
-<Button>kjjkj</Button>
+```jsx live
+<ContainedButton color="wasabi">ボタン</ContainedButton>
+<ContainedButton color="secondary">ボタン</ContainedButton>
 ```
