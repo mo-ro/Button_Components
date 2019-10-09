@@ -21,6 +21,7 @@
     "eslint": "^6.5.1",
     "eslint-plugin-react": "^7.16.0",
     "gatsby-plugin-alias-imports": "^1.0.5",
+    "prop-types": "^15.7.2",
     "react": "^16.10.2"
   },
   "devDependencies": {
