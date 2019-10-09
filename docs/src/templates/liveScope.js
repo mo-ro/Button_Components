@@ -1,1 +1,1 @@
-export { default as ContainedButton } from "@components/ContainedButton";
+export { default as Button } from "@components/Button";
