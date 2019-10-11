@@ -4,7 +4,13 @@ export default {
       primary: "#84bf4d",
       text: "#fff",
       hover: "#96ce62",
-      active: "79AC4A"
+      active: "#79AC4A"
+    },
+    shoyu: {
+      primary: "#A95F35",
+      text: "#fff",
+      hover: "#B6734C",
+      active: "#924D27"
     },
     maguro: {
       primary: "#D93939",
