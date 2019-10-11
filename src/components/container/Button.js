@@ -1,6 +1,16 @@
 import styled from "styled-components";
-import { buttonColors } from "@const/buttonColor";
 import theme from "@const/theme";
+
+const getThemeColors = (color, theme) => {
+  return `
+    color: ${theme.colors[color].text};
+    background-color: ${theme.colors[color].primary};
+
+    &:hover {
+      background-color: ${theme.colors[color].hover}
+    }
+  `;
+};
 
 const Button = styled.button.attrs(props => {
   return {
@@ -8,20 +18,30 @@ const Button = styled.button.attrs(props => {
     className: props.disabled ? "disabled" : ""
   };
 })`
-  color: ${props =>
-    theme.colors[props.color] ? theme.colors[props.color].text : ""};
-  background-color: ${props =>
-    theme.colors[props.color] ? theme.colors[props.color].primary : ""};
-  ${props => (props.color ? buttonColors(props.color) : "")};
+  ${props =>
+    theme.colors[props.color] ? getThemeColors(props.color, theme) : ""};
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12);
   cursor: pointer;
   font-size: 14px;
+  font-weight: bold;
   line-height: 1;
   transition: background-color 0.2s;
-
-  &:hover {
-    background-color: ${props =>
-      theme.colors[props.color] ? theme.colors[props.color].hover : ""};
-  }
+  overflow: hidden;
+  position: relative;
+  margin-right: 8px;
+  ${props =>
+    props.shari &&
+    `
+    &::after {
+      background-color: #fff;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 8px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+  }`}
 `;
 
 Button.defaultProps = {
